@@ -1,0 +1,217 @@
+:root{
+    --bg-image: url("6A9_background.jpg");
+}
+
+body{
+    margin: 0;
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+    z-index: -1;
+
+    transition: background-image 1s;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 30px;
+}
+
+.header img{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header h1{
+    margin: 0;
+    text-align: center;
+    line-height: 170px;
+    font-size: 125px;
+    color: darkblue;
+}
+
+label{
+    font-size: 40px;
+}
+
+input{
+    width: 290px;
+    height: 20px;
+    font-size: 18px;
+    padding: 8px;
+}
+
+input[type="button"]{
+    width: 150px;
+    height: 40px;
+}
+
+/* Box */
+.box{
+    width: 1000px;
+    margin: 0 auto 40px auto; /* Căn giữa và cách box dưới 40px */
+
+    padding: 20px;
+
+    border: 7px solid rgb(127, 153, 255);
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px gray;
+
+    box-sizing: border-box;
+    font-size: 25px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.box:hover{
+    transform: scale(1.02);
+}
+
+
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.box img{
+    width:500px;
+    height: 325px;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.content p{
+    width: 50%;
+    text-align: justify;
+    font-size: 25px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.content img{
+    width: 500px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+/* Box Halloween */
+.halloween{
+    border: 7px solid darkorange;
+    background: rgba(255, 165, 0, 0.6);
+}
+.halloween h1{
+    color: orangered;
+}
+/* Box Boys Team */
+.boys{
+    border: 7px solid royalblue;
+    background: rgba(65, 105, 225, 0.6);
+}
+.boys h1{
+    color:darkblue ;
+}
+.choir{
+    border: 7px solid #6A1B9A;
+    background: rgba(156, 39, 176, 0.6);
+}
+.choir h1{
+    color:#4B0082; 
+}
+.birthday{
+    border: 7px solid #E91E63;
+    background: rgba(233, 30, 99, 0.6);
+}
+.birthday h1{
+    color: darkred  ;
+}
+button{
+    width: 200px;
+    padding: 25px;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background: rgba(10, 45, 120, 0.95);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* Danh sách menu */
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Chữ trong navbar */
+
+.nav-menu a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+/* Khi rê chuột */
+
+.nav-menu a:hover {
+    color: #87CEFA;
+}

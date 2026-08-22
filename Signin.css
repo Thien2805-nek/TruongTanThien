@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("6A9_background.jpg") center/cover no-repeat;
+    opacity: 0.4; /* Điều chỉnh độ trong suốt */
+    z-index: -1;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    color:darkblue;
+}
+body{
+    text-align: center;
+}
+label{
+    font-size: 40px;
+}
+h1{
+    font-size:50px;
+}
+input {
+    width: 290px;      /* Chiều rộng */
+    height: 20px;      /* Chiều cao */
+    font-size: 18px;   /* Cỡ chữ */
+    padding: 8px;      /* Khoảng cách giữa chữ và viền */
+    
+}
+input[type=button]{
+    width: 150px;
+    height: 40px;
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    margin-bottom: 30px;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+    line-height: 170px;
+    font-size: 50px;
+    color: darkblue;
+}
+button{
+    width: 150px;
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 23px;
+}
+button:hover{
+    transform:scale(1.05);
+}
+.box {
+    border: 7px solid rgb(127, 153, 255);
+
+    padding: 20px;
+
+    width: 150px;
+    height: 75px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    box-shadow: 0 0 10px gray;
+
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+    margin: 0 auto;
+}
+.box:hover {
+    transform: scale(1.05);
+}

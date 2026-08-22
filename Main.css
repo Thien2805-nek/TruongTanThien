@@ -1,0 +1,214 @@
+:root {
+    --bg-image: url("6A9_background.jpg");
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.4;
+    z-index: -1;
+
+    transition: background-image 1s;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    background: rgba(10, 45, 120, 0.95);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.nav-menu a:hover {
+    color: #87CEFA;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    position: relative;
+
+    width: 100%;
+    height: 170px;
+
+    margin-bottom: 30px;
+
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+
+
+.header img {
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+
+    left: 20px;
+    top: 145px;
+
+    transform: translateY(-50%);
+}
+
+
+.header h1 {
+    margin:60px;
+
+    text-align: center;
+    line-height: 170px;
+
+    font-size: 125px;
+    color: darkblue;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+label {
+    font-size: 40px;
+}
+
+
+input {
+    width: 290px;
+    height: 20px;
+
+    font-size: 18px;
+
+    padding: 8px;
+}
+
+
+input[type="button"] {
+    width: 150px;
+    height: 40px;
+}
+
+
+/* =========================
+   BOX
+========================= */
+
+.box {
+    border: 7px solid rgb(127, 153, 255);
+
+    padding: 20px;
+
+    width: 400px;
+    height: 200px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.6);
+
+    box-shadow: 0 0 10px gray;
+
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 200px;
+
+    padding: 0 150px;
+
+    margin-top: 150px;
+}
+
+
+/* =========================
+   LINK
+========================= */
+
+a {
+    font-size: 25px;
+}
